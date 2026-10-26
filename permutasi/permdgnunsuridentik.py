@@ -32,7 +32,7 @@ def tampilkan_studi_kasus(jumlah):
     print("dibedakan satu sama lain).")
     print("Berapa banyak susunan warna berbeda yang bisa dibuat?\n")
 
-def main():
+def jalankan_modul():
     tampilkan_studi_kasus(JUMLAH_LAMPU)
 
     daftar = buat_daftar_lampu(JUMLAH_LAMPU)
@@ -64,4 +64,4 @@ def main():
         f"({'COCOK' if len(hasil) == jumlah_rumus else 'TIDAK COCOK'})")
 
 if __name__ == "__main__":
-    main()
+    jalankan_modul()
