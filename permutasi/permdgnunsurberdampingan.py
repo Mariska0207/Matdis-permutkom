@@ -62,4 +62,4 @@ def jalankan_modul():
         f"({'COCOK' if cek == len(hasil) else 'TIDAK COCOK'})")
 
 if __name__ == "__main__":
-    main()
+    jalankan_modul()

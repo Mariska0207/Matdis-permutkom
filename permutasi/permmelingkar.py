@@ -39,4 +39,4 @@ def jalankan_modul():
         print(f"{i:>5}. {' -> '.join(susunan)}")
 
 if __name__ == "__main__":
-    main()
+    jalankan_modul()
