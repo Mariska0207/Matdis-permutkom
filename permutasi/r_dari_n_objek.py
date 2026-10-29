@@ -10,7 +10,7 @@ r = len(jabatan)
 
 def tampilkan_materi():
     print("\n" + "="*65)
-    print(" 📖 MATERI: PERMUTASI r DARI n OBJEK ")
+    print("MATERI: PERMUTASI r DARI n OBJEK ")
     print("="*65)
     print("Permutasi adalah cara menyusun objek dengan ")
     print("memperhatikan urutan (AB berbeda dengan BA).")
@@ -27,7 +27,7 @@ def tampilkan_materi():
 
 def tampilkan_studi_kasus():
     print("\n" + "="*70)
-    print(" 💡 STUDI KASUS ")
+    print("STUDI KASUS ")
     print("="*70)
     print(f"Sebuah organisasi memiliki {n} calon pengurus (n = {n}):")
     print(", ".join(calon))
@@ -40,7 +40,7 @@ def tampilkan_studi_kasus():
 
 def tampilkan_jawaban():
     print("\n" + "="*55)
-    print(" 📝 JAWABAN & PEMBAHASAN ")
+    print("JAWABAN & PEMBAHASAN ")
     print("="*55)
     print("Diketahui:")
     print(f"n = {n} (total calon)")
@@ -79,7 +79,7 @@ def tampilkan_jawaban():
 
 def tampilkan_daftar_susunan():
     print("\n" + "="*55)
-    print(" 📋 DAFTAR SUSUNAN ")
+    print("DAFTAR SUSUNAN ")
     print("="*55)
     for i, susunan in enumerate(permutations(calon, r), start=1):
         print(f"{i}. " + ", ".join(f"{j}: {o}" for j, o in zip(jabatan, susunan)))

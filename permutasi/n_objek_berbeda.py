@@ -8,7 +8,7 @@ n = len(mahasiswa)
 
 def tampilkan_materi():
     print("\n" + "="*55)
-    print(" 📖 MATERI: PERMUTASI n OBJEK BERBEDA ")
+    print("MATERI: PERMUTASI n OBJEK BERBEDA ")
     print("="*55)
     print("Permutasi adalah cara menyusun objek dengan ")
     print("memperhatikan urutan (AB berbeda dengan BA).")
@@ -23,7 +23,7 @@ def tampilkan_materi():
 
 def tampilkan_studi_kasus():
     print("\n" + "="*55)
-    print(" 💡 STUDI KASUS ")
+    print("STUDI KASUS ")
     print("="*55)
     print(f"Terdapat {n} mahasiswa (n = {n}):")
     print(", ".join(mahasiswa))
@@ -35,7 +35,7 @@ def tampilkan_studi_kasus():
 
 def tampilkan_jawaban():
     print("\n" + "="*55)
-    print(" 📝 JAWABAN & PEMBAHASAN ")
+    print("JAWABAN & PEMBAHASAN ")
     print("="*55)
     print("Diketahui:")
     print(f"n = {n} (total mahasiswa)")
@@ -62,7 +62,7 @@ def tampilkan_jawaban():
 
 def tampilkan_daftar_susunan():
     print("\n" + "="*55)
-    print(" 📋 DAFTAR SUSUNAN ")
+    print("DAFTAR SUSUNAN ")
     print("="*55)
     for i, susunan in enumerate(permutations(mahasiswa), start=1):
         print(f"{i}. " + " - ".join(susunan))

@@ -1,54 +1,52 @@
 import os
-from kombinasi import (kombbiasatanpaperulang, 
-                        kombdgnbatasan, 
-                        kombiasaaturanperk, 
-                        kombiasamtodkomplem, 
-                        kombiasateorigraf, 
-                        komdgnperulang)
-from permutasi import (permdgnperulangan, 
-                    permdgnunsurberdampingan, 
-                    permdgnunsuridentik, 
-                    permmelingkar, 
-                    permnobjekberbeda, 
-                    permrdarinobjek)
+from kombinasi import (tanpa_perulangan, dengan_batasan, 
+                        aturan_perkalian, metode_komplement, 
+                        teori_graf, dengan_perulangan)
+from permutasi import (dengan_perulangan, unsur_berdampingan, 
+                    unsur_identik, melingkar, 
+                    n_objek_berbeda, r_dari_n_objek)
 import time
 
+def bersihkan_layar():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def tekanEnter():
     input("\nTekan Enter untuk melanjutkan...")
 
 def menu_permutasi():
     while True:
+        bersihkan_layar()
         print("\n=== Menu Belajar Permutasi ===")
-        print("1. Permutasi dengan perulangan (permdgnperulangan.py)")
-        print("2. Permutasi dengan unsur berdampingan (permdgnunsurberdampingan.py)")
-        print("3. Permutasi dengan unsur identik (permdgnunsuridentik.py)")
-        print("4. Permutasi melingkar (permmelingkar.py)")
-        print("5. Permutasi n objek berbeda (permnobjekberbeda.py)")
-        print("6. Permutasi r dari n objek (permrdarinobjek.py)")
+        print("1. Permutasi dengan perulangan")
+        print("2. Permutasi dengan unsur berdampingan")
+        print("3. Permutasi dengan unsur identik")
+        print("4. Permutasi melingkar")
+        print("5. Permutasi n objek berbeda")
+        print("6. Permutasi r dari n objek")
         print("0. Kembali ke Menu Utama")
         
         pilihan = input("Pilih materi (0-6): ")
+        bersihkan_layar()
         
         if pilihan == '0':
             break
         elif pilihan == '1':
-            permdgnperulangan.jalankan_modul()
+            dengan_perulangan.jalankan_modul()
             tekanEnter()
         elif pilihan == '2':
-            permdgnunsurberdampingan.jalankan_modul()
+            unsur_berdampingan.jalankan_modul()
             tekanEnter()   
         elif pilihan == '3':
-            permdgnunsuridentik.jalankan_modul()
+            unsur_identik.jalankan_modul()
             tekanEnter()
         elif pilihan == '4':
-            permmelingkar.jalankan_modul()
+            melingkar.jalankan_modul()
             tekanEnter()
         elif pilihan == '5':
-            permnobjekberbeda.jalankan_modul()
+            n_objek_berbeda.jalankan_modul()
             tekanEnter()    
         elif pilihan == '6':
-            permrdarinobjek.jalankan_modul()
+            r_dari_n_objek.jalankan_modul()
             tekanEnter()
         else:
             print("Pilihan tidak valid.")
@@ -56,13 +54,14 @@ def menu_permutasi():
 
 def menu_kombinasi():
     while True:
+        bersihkan_layar()
         print("\n=== Menu Belajar Kombinasi ===")
-        print("1. Kombinasi biasa tanpa perulangan (kombbiasatanpaperulang.py)")
-        print("2. Kombinasi dengan batasan (kombdgnbatasan.py)")
-        print("3. Kombinasi biasa aturan perkalian (kombiasaaturanperk.py)")
-        print("4. Kombinasi biasa metode komplemen (kombiasamtodkomplem.py)")
-        print("5. Kombinasi biasa teori graf (kombiasateorigraf.py)")
-        print("6. Kombinasi dengan perulangan (komdgnperulang.py)")
+        print("1. Kombinasi biasa tanpa perulangan")
+        print("2. Kombinasi dengan batasan")
+        print("3. Kombinasi biasa aturan perkalian")
+        print("4. Kombinasi biasa metode komplemen")
+        print("5. Kombinasi biasa teori graf")
+        print("6. Kombinasi dengan perulangan")
         print("0. Kembali ke Menu Utama")
         
         pilihan = input("Pilih materi (0-6): ")
@@ -70,28 +69,29 @@ def menu_kombinasi():
         if pilihan == '0':
             break
         elif pilihan == '1':
-            kombbiasatanpaperulang.jalankan_modul()
+            tanpa_perulangan.jalankan_modul()
             tekanEnter()
         elif pilihan == '2':
-            kombdgnbatasan.jalankan_modul()
+            dengan_batasan.jalankan_modul()
             tekanEnter()
         elif pilihan == '3':
-            kombiasaaturanperk.jalankan_modul()
+            aturan_perkalian.jalankan_modul()
             tekanEnter()
         elif pilihan == '4':
-            kombiasamtodkomplem.jalankan_modul()
+            metode_komplement.jalankan_modul()
             tekanEnter()
         elif pilihan == '5':
-            kombiasateorigraf.jalankan_modul()
+            teori_graf.jalankan_modul()
             tekanEnter()
         elif pilihan == '6':
-            komdgnperulang.jalankan_modul()
+            dengan_perulangan.jalankan_modul()
             tekanEnter()
         else:
             print("Pilihan tidak valid.")
 
 def main():
     while True:
+        bersihkan_layar()
         print("\n" + "="*35)
         print("   PROGRAM BELAJAR MATEMATIKA   ")
         print("="*35)
@@ -100,6 +100,7 @@ def main():
         print("0. Keluar")
         
         pilihan = input("\nMasukkan pilihan Anda (0/1/2): ")
+        bersihkan_layar()
         
         if pilihan == '1':
             menu_permutasi()

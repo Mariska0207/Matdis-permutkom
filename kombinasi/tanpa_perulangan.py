@@ -3,7 +3,7 @@ import time
 
 def tampilkan_materi():
     print("\n" + "="*55)
-    print(" 📖 MATERI: KOMBINASI BIASA TANPA PERULANGAN ")
+    print("MATERI: KOMBINASI BIASA TANPA PERULANGAN ")
     print("="*55)
     print("Kombinasi adalah cara memilih atau mengelompokkan objek ")
     print("tanpa memperhatikan urutan (AB sama dengan BA).")
@@ -19,7 +19,7 @@ def tampilkan_materi():
 
 def tampilkan_studi_kasus():
     print("\n" + "="*55)
-    print(" 💡 STUDI KASUS ")
+    print("STUDI KASUS ")
     print("="*55)
     print("Dalam sebuah tim, terdapat 5 orang programmer (n = 5).")
     print("Manajer IT ingin memilih 3 orang (r = 3) untuk ")
@@ -31,7 +31,7 @@ def tampilkan_studi_kasus():
 
 def tampilkan_jawaban():
     print("\n" + "="*55)
-    print(" 📝 JAWABAN & PEMBAHASAN ")
+    print("JAWABAN & PEMBAHASAN ")
     print("="*55)
     print("Diketahui:")
     print("n = 5 (total programmer)")

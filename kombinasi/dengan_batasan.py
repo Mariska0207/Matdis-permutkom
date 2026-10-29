@@ -3,7 +3,7 @@ import time
 
 def tampilkan_materi():
     print("\n" + "="*55)
-    print(" 📖 MATERI: KOMBINASI DENGAN BATASAN (SYARAT) ")
+    print("MATERI: KOMBINASI DENGAN BATASAN (SYARAT) ")
     print("="*55)
     print("Kombinasi dengan batasan adalah penyusunan objek yang")
     print("memiliki syarat tertentu yang harus dipenuhi.")
@@ -17,7 +17,7 @@ def tampilkan_materi():
 
 def tampilkan_studi_kasus():
     print("\n" + "="*55)
-    print(" 💡 STUDI KASUS ")
+    print("STUDI KASUS ")
     print("="*55)
     print("Sebuah divisi IT memiliki 6 programmer dan 4 desainer.")
     print("Manajer ingin membentuk tim khusus berisi 4 orang.")
@@ -30,7 +30,7 @@ def tampilkan_studi_kasus():
 
 def tampilkan_jawaban():
     print("\n" + "="*55)
-    print(" 📝 JAWABAN & PEMBAHASAN ")
+    print("JAWABAN & PEMBAHASAN ")
     print("="*55)
     print("Langkah 1: Memilih 2 programmer dari total 6 programmer")
     print("C(6, 2) = 6! / (2! * (6-2)!) = 15 cara")

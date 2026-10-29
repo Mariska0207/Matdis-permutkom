@@ -3,7 +3,7 @@ import time
 
 def tampilkan_materi():
     print("\n" + "="*55)
-    print(" 📖 MATERI: KOMBINASI METODE KOMPLEMEN ")
+    print("MATERI: KOMBINASI METODE KOMPLEMEN ")
     print("="*55)
     print("Metode komplemen digunakan untuk mempersingkat perhitungan")
     print("saat syarat memiliki banyak skenario cabang, khususnya")
@@ -16,7 +16,7 @@ def tampilkan_materi():
 
 def tampilkan_studi_kasus():
     print("\n" + "="*55)
-    print(" 💡 STUDI KASUS ")
+    print("STUDI KASUS ")
     print("="*55)
     print("Dalam sebuah kelompok terdapat 7 pria dan 4 wanita.")
     print("Anda diminta memilih 3 orang perwakilan dari kelompok itu.")
@@ -28,7 +28,7 @@ def tampilkan_studi_kasus():
 
 def tampilkan_jawaban():
     print("\n" + "="*55)
-    print(" 📝 JAWABAN & PEMBAHASAN ")
+    print("JAWABAN & PEMBAHASAN ")
     print("="*55)
     print("Langkah 1: Menghitung total seluruh kemungkinan tanpa syarat")
     print("Memilih 3 orang dari total 11 orang (7 pria + 4 wanita)")
