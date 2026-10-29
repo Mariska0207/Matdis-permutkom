@@ -59,12 +59,13 @@ def menu_kombinasi():
         print("1. Kombinasi biasa tanpa perulangan")
         print("2. Kombinasi dengan batasan")
         print("3. Kombinasi biasa aturan perkalian")
-        print("4. Kombinasi biasa metode komplemen")
+        print("4. Kombinasi biasa metode komplement")
         print("5. Kombinasi biasa teori graf")
         print("6. Kombinasi dengan perulangan")
         print("0. Kembali ke Menu Utama")
         
         pilihan = input("Pilih materi (0-6): ")
+        bersihkan_layar()
         
         if pilihan == '0':
             break
